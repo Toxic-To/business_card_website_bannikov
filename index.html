@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Банников Семён | Студент 3 курса</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <input class="checkbox" type="checkbox" name="hamburger" id="hamburger" />
+    <label for="hamburger" class="menu-hamburger">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+    </label>
+
+    <div class="header-top">
+        <a href="#home" class="link logo block-center">Банников Семён</a>
+
+        <nav class="navigation">
+            <ul class="menu block-center">
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link active home block-center" href="#home">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                            <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#about-me">Обо&nbsp;мне</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#achievements">Достижения</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#skills">Навыки</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#work">Работа</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#interests">Интересы</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#books">Книги</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#contact-me">Связаться</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="switcher-container block-center">
+            <div class="switcher-wrapper">
+                <input type="radio" name="lang" id="lang-ru" checked />
+                <label class="switcher" for="lang-ru">Ru</label>
+
+                <input type="radio" name="lang" id="lang-eng" />
+                <label class="switcher" for="lang-eng">Eng</label>
+                <span class="lang-placeholder"></span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header observer-section" id="home">
+        <img class="header__background" src="images/bgfon.jpg" alt="background" />
+        <div class="header__background-wrapper"></div>
+
+        <div class="header-center">
+            <div class="header-center__wrapper">
+                <h1 class="name">Банников&nbsp;Семён</h1>
+                <p class="description">Привет! Меня зовут Семён. <span>Я Студент 3 курса,</span> давайте знакомиться!</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-me observer-section" id="about-me">
+        <div class="row">
+            <div class="left">
+                <img src="images/my_foto.jpg" alt="Моя фотография" class="about-me__image" />
+            </div>
+            <div class="right">
+                <h2 class="about-me__title">Банников Семён</h2>
+                <p class="about-me__description gray">Я обязательно стану программистом!!!</p>
+
+                <p class="about-me__description">Я студент 3 курса университета ИТМО с направлением нейротехнологии и программирование. Я хочу связать свою жихнь с программированием и сейчас определяю для себя направление в котором я хотел бы развиваться дальше</p>
+                <p class="about-me__description">Сейчас я углубленно изучаю создание нейросетей и машинное обучение, однако в будущем хотел бы также навыки в создании игр и веб разработке, эта визитка - первая проба пера в этой сфере.</p>
+                <p class="about-me__description">В свободное время я играю в компьютерные игры, занимаюсь творчеством, играю в группе на ритм гитаре</p>
+
+                <ul class="about-me__extra">
+                    <li class="about-me__extra-element">
+                        <span class="about-me__extra-icon birthday">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                              <path d="M15 1.784l-.796.796a1.125 1.125 0 101.591 0L15 1.784zM12 1.784l-.796.796a1.125 1.125 0 101.591 0L12 1.784zM9 1.784l-.796.796a1.125 1.125 0 101.591 0L9 1.784zM9.75 7.547c.498-.02.998-.035 1.5-.042V6.75a.75.75 0 011.5 0v.755c.502.007 1.002.021 1.5.042V6.75a.75.75 0 011.5 0v.88l.307.022c1.55.117 2.693 1.427 2.693 2.946v1.018a62.182 62.182 0 00-13.5 0v-1.018c0-1.519 1.143-2.829 2.693-2.946l.307-.022v-.88a.75.75 0 011.5 0v.797zM12 12.75c-2.472 0-4.9.184-7.274.54-1.454.217-2.476 1.482-2.476 2.916v.384a4.104 4.104 0 012.585.364 2.605 2.605 0 002.33 0 4.104 4.104 0 013.67 0 2.605 2.605 0 002.33 0 4.104 4.104 0 013.67 0 2.605 2.605 0 002.33 0 4.104 4.104 0 012.585-.364v-.384c0-1.434-1.022-2.7-2.476-2.917A49.138 49.138 0 0012 12.75zM21.75 18.131a2.604 2.604 0 00-1.915.165 4.104 4.104 0 01-3.67 0 2.604 2.604 0 00-2.33 0 4.104 4.104 0 01-3.67 0 2.604 2.604 0 00-2.33 0 4.104 4.104 0 01-3.67 0 2.604 2.604 0 00-1.915-.165v2.494c0 1.036.84 1.875 1.875 1.875h15.75c1.035 0 1.875-.84 1.875-1.875v-2.494z" />
+                            </svg>
+                        </span>
+                        <div class="about-me__extra-content">
+                            <span class="about-me__extra-title bold">Дата рождения:</span>
+                            <span class="about-me__extra-description">11.03.2003</span>
+                        </div>
+                    </li>
+                    <li class="about-me__extra-element">
+                        <span class="about-me__extra-icon address">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                              <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="about-me__extra-content">
+                            <span class="about-me__extra-title bold">Адрес:</span>
+                            <span class="about-me__extra-description">г. Санкт-Петербург, Россия</span>
+                        </div>
+                    </li>
+                    <li class="about-me__extra-element">
+                        <span class="about-me__extra-icon education">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                              <path d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z" />
+                              <path d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z" />
+                              <path d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z" />
+                            </svg>
+                        </span>
+                        <div class="about-me__extra-content">
+                            <span class="about-me__extra-title bold">Образование:</span>
+                            <span class="about-me__extra-description">Студент 3 курса НИУ ИТМО, направление "нейротехнологии и программирование"</span>
+                        </div>
+                    </li>
+                    <li class="about-me__extra-element">
+                        <span class="about-me__extra-icon courses">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                              <path d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z" />
+                            </svg>
+                        </span>
+                        <div class="about-me__extra-content">
+                            <span class="about-me__extra-title bold">Курсы:</span>
+                            <span class="about-me__extra-description">Алгоритмы: теория и практика. Структуры данных (Stepik)</span>
+                            <span class="about-me__extra-description block">Введение в программирование (C++) (Stepik)</span>
+                            <span class="about-me__extra-description block">Машинное обучение и анализ данных (Открытое образование)</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements section-grey block-center observer-section" id="achievements">
+        <h2 class="second-title">Достижения</h2>
+
+        <div class="achievements-list slider">
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-1" checked />
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-2" />
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-3" />
+
+            <div class="achievements-list__view slider__wrapper">
+                <a href="images/achievements/хранение и обработка данных.jpg" target="_blank" class="achievements-list__element slider__link  block-center">
+                    <img
+                        class="achievements-list__image slider__image"
+                        src="images/achievements/хранение и обработка данных.jpg"
+                        alt="Хранение и обработка данных"
+                    />
+                </a>
+                <a href="images/achievements/степик алгосы.jpg" target="_blank" class="achievements-list__element slider__link  block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/степик алгосы.jpg" alt="Алгоритмы и структура данных">
+                </a>
+                <a href="images/achievements/степик с++.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/степик с++.png" alt="с++">
+                </a>
+            </div>
+            <div class="achievements-list__view slider__wrapper">
+                <a href="images/achievements/биометрия.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/биометрия.png" alt="биометрия">
+                </a>
+                <a href="images/achievements/линейные системы.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/линейные системы.png" alt="линейные системы">
+                </a>
+                <a href="images/achievements/ci.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/ci.png" alt="си">
+                </a>
+            </div>
+            <div class="achievements-list__view slider__wrapper">
+                <a href="images/achievements/css-3.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/css-3.png" alt="css картинка">
+                </a>
+                <a href="images/achievements/html-5.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/html-5.png" alt="html картинка">
+                </a>
+                <a href="images/achievements/js.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/js.png" alt="js картинка">
+                </a>
+            </div>
+
+            <div class="slider__controls block-center">
+                <label for="slider-achievements-1" class="slider__controls-element"></label>
+                <label for="slider-achievements-2" class="slider__controls-element"></label>
+                <label for="slider-achievements-3" class="slider__controls-element"></label>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills observer-section" id="skills">
+      <h2 class="second-title">Навыки</h2>
+      <div class="interests__list">
+        <div class="interest-wrapper">
+            <img src="images/Python_logo_icon.png" alt="" class="interest-image" />
+            <p class="interest-title bold">Python.</p>
+            <p class="interest-text">Опытная работа с Python, включая использование различных библиотек и фреймворков, таких как NumPy, Pandas, Flask, Django.</p>
+            <p class="interest-text">Разработка скриптов и приложений для автоматизации задач, анализа данных и машинного обучения.</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="images/ci.webp" alt="" class="interest-image" />
+            <p class="interest-title bold">C/C++.</p>
+            <p class="interest-text">Глубокие знания языков программирования C и C++.</p>
+            <p class="interest-text">Разработка высокопроизводительных и надежных приложений, включая системное программирование, разработку игр и приложений реального времени.</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="images/html.css.js.png" alt="" class="interest-image" />
+            <p class="interest-title bold">Html/Css/Js.</p>
+            <p class="interest-text">Опыт создания динамических и отзывчивых веб-сайтов с использованием HTML, CSS и JavaScript.</p>
+            <p class="interest-text">Знание современных фреймворков и библиотек, таких как React, Angular, Bootstrap.</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="images/soft-skills.webp" alt="" class="interest-image" />
+            <p class="interest-title bold">soft skills.</p>
+            <p class="interest-text">Отличные коммуникативные навыки, умение эффективно работать в команде.</p>
+            <p class="interest-text">Умение решать проблемы и принимать решения в быстро меняющейся среде.</p>
+            <p class="interest-text">Организационные навыки, способность управлять временем и приоритетами.</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="images/sql.webp" alt="" class="interest-image" />
+            <p class="interest-title bold">SQL.</p>
+            <p class="interest-text">Глубокие знания SQL, включая язык запросов, создание баз данных, управление данными и оптимизацию запросов.</p>
+            <p class="interest-text">Оптимизация производительности запросов и баз данных через использование индексов, хранимых процедур, триггеров и оптимизации структуры данных.</p>
+            <p class="interest-text">Опыт моделирования баз данных, включая создание схем, связей и определение ограничений целостности данных.</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="images/docum.webp" alt="" class="interest-image" />
+            <p class="interest-title bold">Ведение документации.</p>
+            <p class="interest-text">Опыт работы с технической документацией, включая создание и анализ API-документации, технических спецификаций и руководств пользователя.</p>
+            <p class="interest-text">Умение четко и понятно описывать технические концепции и процессы для различных аудиторий.</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="work section-grey observer-section" id="work">
+        <h2 class="second-title">Работа</h2>
+
+        <div class="work-wrapper block-center">
+            <div class="work-element work-element__animation left" data-year="2020">
+                <div class="work-element__content">
+                    <p class="work-element__title bold">Консультант магазина "Reserved"</p>
+                    <p class="work-element__description">июнь 2020 - август 2020</p>
+
+                    <p class="work-element__block-title bold">Навыки</p>
+                    <ul class="work-element__skills">
+                        <li class="work-element__skills-element">Коммуникабельность</li>
+                        <li class="work-element__skills-element">Стрессоустойчивость</li>
+                        <li class="work-element__skills-element">Внимательность</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-element work-element__animation right" data-year="2022">
+                <div class="work-element__content">
+                    <p class="work-element__title bold">Победа в хакатоне</p>
+                    <p class="work-element__description">декабрь 2022</p>
+
+                    <p class="work-element__block-title bold">Проект</p>
+                    <ul class="work-element__projects">
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">Камаз</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    Создание системы помощи управления автомобилем
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <p class="work-element__block-title bold">Навыки</p>
+                    <ul class="work-element__skills">
+                        <li class="work-element__skills-element">разработка андроид приложений</li>
+                        <li class="work-element__skills-element">Java</li>
+                        <li class="work-element__skills-element">обучение модели распознавания голоса и видео</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-element work-element__animation left" data-year="2023">
+                <div class="work-element__content">
+                    <p class="work-element__title bold">Участие в хакатоне</p>
+                    <p class="work-element__description">апрель 2023</p>
+
+                    <p class="work-element__block-title bold">Проект</p>
+                    <ul class="work-element__projects">
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">Мтс</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    Создание видео плеера для людей с дальтонизмом и эпилепсией
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <p class="work-element__block-title bold">Навыки</p>
+                    <ul class="work-element__skills">
+                        <li class="work-element__skills-element">html</li>
+                        <li class="work-element__skills-element">css</li>
+                        <li class="work-element__skills-element">javascript</li>
+                        <li class="work-element__skills-element">python</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-element work-element__animation right" data-year="2023">
+                <div class="work-element__content">
+                    <p class="work-element__title bold">Участие в хакатоне</p>
+                    <p class="work-element__description">осень 2023</p>
+
+                    <p class="work-element__block-title bold">Проекты</p>
+                    <ul class="work-element__projects">
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">codenrock</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    создание нейросети для улучшения дизайна зданий(приведение зданий к единому стилю)
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <p class="work-element__block-title bold">Навыки</p>
+                    <ul class="work-element__skills">
+                        <li class="work-element__skills-element">html</li>
+                        <li class="work-element__skills-element">css</li>
+                        <li class="work-element__skills-element">javascript</li>
+                        <li class="work-element__skills-element">python</li>
+                        <li class="work-element__skills-element">team lead skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interests observer-section" id="interests">
+        <h2 class="second-title">Интересы</h2>
+
+        <div class="interests__list">
+            <div class="interest-wrapper">
+                <img src="images/interests/guitar.webp" alt="" class="interest-image" />
+                <p class="interest-title bold">Игра в группе на ритм гитаре</p>
+                <p class="interest-text">Мой путь как гитариста начался в 4 года, когда я поступил в музыкальную школу на класс гитары</p>
+                <p class="interest-text">до поступления в университет, со своими друзьями собрал группу, где писал свои песни и каверы вечной класики</p>
+                <p class="interest-text">Из-за учебы в университете, группа распалась, но навсегда осталась в душе</p>
+            </div>
+            <div class="interest-wrapper">
+                <img src="images/interests/anime.webp" alt="" class="interest-image" />
+                <p class="interest-title bold">Аниме</p>
+                <p class="interest-text">Изучение Японской анимации привлекло меня в после советов моих друзей</p>
+                <p class="interest-text">За долгие 7 лет, я посмотрел большое количество как нестареющей классики, так и новых тайтлов</p>
+            </div>
+            <div class="interest-wrapper">
+                <img src="images/interests/games.jpg" alt="" class="interest-image" />
+                <p class="interest-title bold">Компьютерные игры</p>
+                <p class="interest-text">Для меня компьютерные игры являются способом провести время с друзьями, выпустить пар </p>
+                <p class="interest-text">А так-же компьютерные игры привели меня к цели стать разработчиком компьютерных игр</p>
+                <p class="interest-text">Компьютерные игры для меня как способ повествования и искусства</p>
+            </div>
+            <div class="interest-wrapper">
+                <img src="images/interests/MMA.webp" alt="" class="interest-image" />
+                <p class="interest-title bold">ММА</p>
+                <p class="interest-text">с 4 лет, я занимался боевыми видами спорта но закончилось это на ММА</p>
+                <p class="interest-text">За это время я получил большое количество наград, но моя карьера закончилась до того как я смог добится положительных результатов выше городских соревнований</p>
+                <p class="interest-text">Увлечение таким спортом помогает мне держать себя в форме и выпускать дух</p>
+            </div>
+            <div class="interest-wrapper">
+                <img src="images/interests/kulinaria.webp" alt="" class="interest-image" />
+                <p class="interest-title bold">Кулинария</p>
+                <p class="interest-text">Готовить для любимых всегда приятно, а вкусно готовить уж тем более</p>
+                <p class="interest-text">Больше всего люблю готовить мясо, а меньше всего десерты</p>
+                <p class="interest-text">Если бы было соревнование на приготовления бургеров, я бы точно занял первое место</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="books section-grey block-center observer-section" id="books">
+        <h2 class="second-title">Прочитанные книги</h2>
+
+        <p class="section-description">Тут указаны не все прочитанные мной книги,
+            а только те книги, которые произвели на меня наибольшее впечатление.</p>
+
+        <div class="books-list slider">
+            <input class="slider__input" type="radio" name="slider_books" id="slider-books-1" checked />
+            <input class="slider__input" type="radio" name="slider_books" id="slider-books-2" />
+
+            <div class="slider__wrapper">
+                <a href="images/books/grokaem.jpg" target="_blank" class="slider__link  block-center">
+                    <img class="slider__image" src="images/books/grokaem.jpg" alt="Грокаем алгоритмы">
+                </a>
+                <a href="images/books/python.jpg" target="_blank" class="slider__link  block-center">
+                    <img class="slider__image" src="images/books/python.jpg" alt="Простой Питон">
+                </a>
+                <a href="images/books/stollings.jpeg" target="_blank" class="slider__link  block-center">
+                    <img class="slider__image" src="images/books/stollings.jpeg" alt="Опреационные системы">
+                </a>
+            </div>
+            <div class="slider__wrapper">
+                <a href="images/books/unity.jpg" target="_blank" class="slider__link  block-center">
+                    <img class="slider__image" src="images/books/unity.jpg" alt="Unity">
+                </a>
+                <a href="images/books/1984.jpg" target="_blank" class="slider__link  block-center">
+                    <img class="slider__image" src="images/books/1984.jpg" alt="1984">
+                </a>
+                <a href="images/books/fekseus.webp" target="_blank" class="slider__link  block-center">
+                    <img class="slider__image" src="images/books/fekseus.webp" alt="Искусство манипуляции">
+                </a>
+            </div>
+
+            <div class="slider__controls block-center">
+                <label for="slider-books-1" class="slider__controls-element"></label>
+                <label for="slider-books-2" class="slider__controls-element"></label>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-me observer-section" id="contact-me">
+        <div class="contact-me__wrapper">
+            <h2 class="second-title">Обратная связь</h2>
+
+            <form action="" class="contact-me__form">
+                <div class="input-wrapper left">
+                    <label class="label bold" for="name">Имя</label>
+                    <input class="input" type="text" id="name" placeholder="Введите ваше имя" required />
+                </div>
+                <div class="input-wrapper right">
+                    <label class="label bold" for="email">E-mail</label>
+                    <input class="input" type="email" id="email" placeholder="Введите ваш e-mail адрес" required />
+                </div>
+                <div class="cls"></div>
+
+                <div class="textarea-wrapper">
+                    <label class="label bold" for="message">Сообщение</label>
+                    <textarea
+                        class="textarea"
+                        name="message"
+                        placeholder="Подробно опишите, с какой целью хотите связаться со мной"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="submit">Отправить</button>
+                <a href="test.html" class="link test block-center">Перейти к тесту</a>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer section-grey">
+        <ul class="socials">
+            <li class="social-element">
+                <a href="https://m.vk.com/dead_inside_v1" target="_blank" class="link social-element__link block-center">
+                    <svg class="link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.344 16.163h-1.867c-1.055 0-1.232-.601-2.102-1.469-.785-.785-1.22-.183-1.202.935.006.297-.141.534-.495.534-1.105 0-2.694.156-4.304-1.58-1.647-1.779-3.374-5.348-3.374-5.699 0-.208.172-.301.459-.301h1.898c.503 0 .545.249.686.568.584 1.331 1.981 4.002 2.354 2.511.214-.856.301-2.839-.615-3.01-.52-.096.396-.652 1.722-.652.33 0 .688.035 1.054.12.673.156.676.458.666.898-.034 1.666-.235 2.786.204 3.069.419.271 1.521-1.502 2.104-2.871.159-.378.191-.632.643-.632h2.322c1.216 0-.159 1.748-1.21 3.112-.847 1.099-.802 1.12.183 2.034.701.651 1.53 1.54 1.53 2.043 0 .238-.186.39-.656.39z"/></svg>
+                </a>
+            </li>
+            <li class="social-element">
+                <a href="https://t.me/Sirtoxic" target="_blank" class="link social-element__link block-center">
+                    <svg class="link" width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="telegram-4" d="M12,0c-6.626,0 -12,5.372 -12,12c0,6.627 5.374,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.628 -5.373,-12 -12,-12Zm3.224,17.871c0.188,0.133 0.43,0.166 0.646,0.085c0.215,-0.082 0.374,-0.267 0.422,-0.491c0.507,-2.382 1.737,-8.412 2.198,-10.578c0.035,-0.164 -0.023,-0.334 -0.151,-0.443c-0.129,-0.109 -0.307,-0.14 -0.465,-0.082c-2.446,0.906 -9.979,3.732 -13.058,4.871c-0.195,0.073 -0.322,0.26 -0.316,0.467c0.007,0.206 0.146,0.385 0.346,0.445c1.381,0.413 3.193,0.988 3.193,0.988c0,0 0.847,2.558 1.288,3.858c0.056,0.164 0.184,0.292 0.352,0.336c0.169,0.044 0.348,-0.002 0.474,-0.121c0.709,-0.669 1.805,-1.704 1.805,-1.704c0,0 2.084,1.527 3.266,2.369Zm-6.423,-5.062l0.98,3.231l0.218,-2.046c0,0 3.783,-3.413 5.941,-5.358c0.063,-0.057 0.071,-0.153 0.019,-0.22c-0.052,-0.067 -0.148,-0.083 -0.219,-0.037c-2.5,1.596 -6.939,4.43 -6.939,4.43Z"/></svg>
+                </a>
+            </li>
+        </ul>
+
+        <p class="footer-about">
+            &copy;&nbsp;Банников&nbsp;Семён 2003&nbsp;-&nbsp;2024
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

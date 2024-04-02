@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оценочный тест</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .radio-label {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class=" observer-section">
+        <h2 class="second-title ">Оценочный тест</h2>
+
+        <div class="question">
+            <p class="test-title">Насколько вам понравилась страница?</p>
+            <label class="radio-label"><input type="radio" name="liking" value="1">1</label>
+            <label class="radio-label"><input type="radio" name="liking" value="2">2</label>
+            <label class="radio-label"><input type="radio" name="liking" value="3">3</label>
+            <label class="radio-label"><input type="radio" name="liking" value="4">4</label>
+            <label class="radio-label"><input type="radio" name="liking" value="5">5</label>
+        </div>
+
+        <div class="question">
+            <p class="test-title">Соответствуют ли описанные навыки требуемым?</p>
+            <label class="radio-label"><input type="radio" name="skills" value="да">Да</label>
+            <label class="radio-label"><input type="radio" name="skills" value="нет">Нет</label>
+            <label class="radio-label"><input type="radio" name="skills" value="не уверен">Не уверен</label>
+        </div>
+
+        <div class="question">
+            <p class="test-title">Могу ли я стать потенциальным сотрудником?</p>
+            <label class="radio-label"><input type="radio" name="potential" value="да">Да</label>
+            <label class="radio-label"><input type="radio" name="potential" value="нет">Нет</label>
+            <label class="radio-label"><input type="radio" name="potential" value="не уверен">Не уверен</label>
+        </div>
+
+        <button class="submit-btn" onclick="submitTest()">Отправить</button>
+    </section>
+    <script>
+        function submitTest() {
+            const liking = document.querySelector('input[name="liking"]:checked');
+            const skills = document.querySelector('input[name="skills"]:checked');
+            const potential = document.querySelector('input[name="potential"]:checked');
+
+            if (!liking || !skills || !potential) {
+                alert("Пожалуйста, ответьте на все вопросы.");
+                return;
+            }
+
+            const data = {
+                liking: liking.value,
+                skills: skills.value,
+                potential: potential.value
+            };
+
+            // Здесь можно отправить данные на сервер для обработки
+            console.log(data);
+            // Или взаимодействовать с данными как-то иначе
+
+            alert("Спасибо за участие в тесте!");
+        }
+    </script>
+</body>
+</html>
