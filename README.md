@@ -1,1 +1,2 @@
-# 2023-fall-lab-portfolio-bannikov-s.-s.
+# 2024-portfolio-bannikov-s.-s.
+Сайт-визитка, пэт проект представляющий знания Html css javascript
